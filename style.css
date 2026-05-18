@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffe4e1; /* Kawaii pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    user-select: none; /* Prevents selecting text while holding */
+    -webkit-user-select: none;
+}
+
+.container {
+    text-align: center;
+}
+
+#kirby {
+    max-width: 300px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    -webkit-user-drag: none; /* Prevents dragging the image instead of holding */
+}
+
+#kirby:active {
+    transform: scale(0.95); /* Slight squeeze effect on press */
+}
